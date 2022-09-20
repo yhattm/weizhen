@@ -20,7 +20,7 @@ $ npm install -g weizhen
 $ weizhen COMMAND
 running command...
 $ weizhen (--version)
-weizhen/0.0.0 linux-x64 node-v16.17.0
+weizhen/0.0.0 linux-x64 node-v17.6.0
 $ weizhen --help [COMMAND]
 USAGE
   $ weizhen COMMAND
@@ -100,7 +100,7 @@ DESCRIPTION
   Display help for weizhen.
 ```
 
-_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.10/src/commands/help.ts)_
+_See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.12/src/commands/help.ts)_
 
 ## `weizhen plugins`
 
@@ -120,7 +120,7 @@ EXAMPLES
   $ weizhen plugins
 ```
 
-_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.0.11/src/commands/plugins/index.ts)_
+_See code: [@oclif/plugin-plugins](https://github.com/oclif/plugin-plugins/blob/v2.1.0/src/commands/plugins/index.ts)_
 
 ## `weizhen plugins:install PLUGIN...`
 
