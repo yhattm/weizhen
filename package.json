@@ -1,6 +1,6 @@
 {
   "name": "weizhen",
-  "version": "5.9.20",
+  "version": "5.9.21",
   "description": "oclif example Hello World CLI",
   "author": "Ben",
   "bin": {

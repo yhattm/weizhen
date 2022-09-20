@@ -20,7 +20,7 @@ $ npm install -g weizhen
 $ weizhen COMMAND
 running command...
 $ weizhen (--version)
-weizhen/5.9.20 linux-x64 node-v17.6.0
+weizhen/5.9.21 linux-x64 node-v17.6.0
 $ weizhen --help [COMMAND]
 USAGE
   $ weizhen COMMAND
@@ -29,9 +29,11 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
+* [`weizhen gpio`](#weizhen-gpio)
 * [`weizhen hello PERSON`](#weizhen-hello-person)
 * [`weizhen hello world`](#weizhen-hello-world)
 * [`weizhen help [COMMAND]`](#weizhen-help-command)
+* [`weizhen iot [FILE]`](#weizhen-iot-file)
 * [`weizhen plugins`](#weizhen-plugins)
 * [`weizhen plugins:install PLUGIN...`](#weizhen-pluginsinstall-plugin)
 * [`weizhen plugins:inspect PLUGIN...`](#weizhen-pluginsinspect-plugin)
@@ -41,6 +43,27 @@ USAGE
 * [`weizhen plugins:uninstall PLUGIN...`](#weizhen-pluginsuninstall-plugin-1)
 * [`weizhen plugins:uninstall PLUGIN...`](#weizhen-pluginsuninstall-plugin-2)
 * [`weizhen plugins update`](#weizhen-plugins-update)
+
+## `weizhen gpio`
+
+set GPIO
+
+```
+USAGE
+  $ weizhen gpio -p <value> -s <value>
+
+FLAGS
+  -p, --pin=<value>     (required) GPIO pin number
+  -s, --status=<value>  (required) status is highlow/high/low
+
+DESCRIPTION
+  set GPIO
+
+EXAMPLES
+  $ weizhen gpio -s on
+```
+
+_See code: [dist/commands/gpio.ts](https://github.com/yhattm/weizhen/blob/v5.9.21/dist/commands/gpio.ts)_
 
 ## `weizhen hello PERSON`
 
@@ -64,7 +87,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/yhattm/weizhen/blob/v5.9.20/dist/commands/hello/index.ts)_
+_See code: [dist/commands/hello/index.ts](https://github.com/yhattm/weizhen/blob/v5.9.21/dist/commands/hello/index.ts)_
 
 ## `weizhen hello world`
 
@@ -101,6 +124,27 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.12/src/commands/help.ts)_
+
+## `weizhen iot [FILE]`
+
+describe the command here
+
+```
+USAGE
+  $ weizhen iot [FILE] [-n <value>] [-f]
+
+FLAGS
+  -f, --force
+  -n, --name=<value>  name to print
+
+DESCRIPTION
+  describe the command here
+
+EXAMPLES
+  $ weizhen iot
+```
+
+_See code: [dist/commands/iot.ts](https://github.com/yhattm/weizhen/blob/v5.9.21/dist/commands/iot.ts)_
 
 ## `weizhen plugins`
 
