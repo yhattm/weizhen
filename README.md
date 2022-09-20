@@ -20,7 +20,7 @@ $ npm install -g weizhen
 $ weizhen COMMAND
 running command...
 $ weizhen (--version)
-weizhen/5.9.21 linux-x64 node-v17.6.0
+weizhen/5.9.22 linux-x64 node-v17.6.0
 $ weizhen --help [COMMAND]
 USAGE
   $ weizhen COMMAND
@@ -63,7 +63,7 @@ EXAMPLES
   $ weizhen gpio -s on
 ```
 
-_See code: [dist/commands/gpio.ts](https://github.com/yhattm/weizhen/blob/v5.9.21/dist/commands/gpio.ts)_
+_See code: [dist/commands/gpio.ts](https://github.com/yhattm/weizhen/blob/v5.9.22/dist/commands/gpio.ts)_
 
 ## `weizhen hello PERSON`
 
@@ -87,7 +87,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/yhattm/weizhen/blob/v5.9.21/dist/commands/hello/index.ts)_
+_See code: [dist/commands/hello/index.ts](https://github.com/yhattm/weizhen/blob/v5.9.22/dist/commands/hello/index.ts)_
 
 ## `weizhen hello world`
 
@@ -144,7 +144,7 @@ EXAMPLES
   $ weizhen iot
 ```
 
-_See code: [dist/commands/iot.ts](https://github.com/yhattm/weizhen/blob/v5.9.21/dist/commands/iot.ts)_
+_See code: [dist/commands/iot.ts](https://github.com/yhattm/weizhen/blob/v5.9.22/dist/commands/iot.ts)_
 
 ## `weizhen plugins`
 
