@@ -20,7 +20,7 @@ $ npm install -g weizhen
 $ weizhen COMMAND
 running command...
 $ weizhen (--version)
-weizhen/0.0.0 linux-x64 node-v17.6.0
+weizhen/5.9.20 linux-x64 node-v17.6.0
 $ weizhen --help [COMMAND]
 USAGE
   $ weizhen COMMAND
@@ -64,7 +64,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/yhattm/weizhen/blob/v0.0.0/dist/commands/hello/index.ts)_
+_See code: [dist/commands/hello/index.ts](https://github.com/yhattm/weizhen/blob/v5.9.20/dist/commands/hello/index.ts)_
 
 ## `weizhen hello world`
 
