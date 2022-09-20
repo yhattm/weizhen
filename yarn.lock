@@ -3761,7 +3761,7 @@ object.assign@^4.1.4:
     has-symbols "^1.0.3"
     object-keys "^1.1.1"
 
-oclif@^3:
+oclif@^3.2.2:
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/oclif/-/oclif-3.2.2.tgz#cf2199b8243c8c6bfd350d799eb2e37536517526"
   integrity sha512-0H239NO9WR/QdmOnYJSbBGJkrW/VoQ3q5/kvdZgOJ71rRSNbcBQxK/7CSldpMpa6gxHoMBckWDNaxCaEzEqXuQ==
@@ -4945,10 +4945,10 @@ typedarray-to-buffer@^3.1.5:
   dependencies:
     is-typedarray "^1.0.0"
 
-typescript@^4.8.3:
-  version "4.8.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.8.3.tgz#d59344522c4bc464a65a730ac695007fdb66dd88"
-  integrity sha512-goMHfm00nWPa8UvR/CPSvykqf6dVV8x/dp0c5mFTMTIu0u0FlGWRioyy7Nn0PGAdHxpJZnuO/ut+PpQ8UiHAig==
+typescript@^4.5.5:
+  version "4.5.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.5.tgz#d8c953832d28924a9e3d37c73d729c846c5896f3"
+  integrity sha512-TCTIul70LyWe6IJWT8QSYeA54WQe8EjQFU4wY52Fasj5UKx88LNYKCgBEHcOMOrFF1rKGbD8v/xcNWVUq9SymA==
 
 unbox-primitive@^1.0.2:
   version "1.0.2"
