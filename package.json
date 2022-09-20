@@ -19,7 +19,8 @@
   "dependencies": {
     "@oclif/core": "^1.13.10",
     "@oclif/plugin-help": "^5",
-    "@oclif/plugin-plugins": "^2.0.1"
+    "@oclif/plugin-plugins": "^2.0.1",
+    "rxjs": "^7.5.6"
   },
   "devDependencies": {
     "@oclif/test": "^2",
