@@ -14,27 +14,27 @@ export default class Gpio extends Command {
   }
 
   public async run(): Promise<void> {
-    const {args, flags} = await this.parse(Gpio)
+    const {flags} = await this.parse(Gpio)
 
     const {pin, status} = flags
     switch (status) {
     case 'highlow': {
       this.log('Set GPIO to ON then OFF')
-      GPIO.SetHighToLow(pin, 1000)
+      GPIO.setHighToLow(pin, 1000)
 
       break
     }
 
     case 'high': {
       this.log('Set GPIO to high')
-      GPIO.SetHigh(pin)
+      GPIO.setHigh(pin)
 
       break
     }
 
     case 'low': {
       this.log('Set GPIO to low')
-      GPIO.SetLow(pin)
+      GPIO.setLow(pin)
 
       break
     }
