@@ -1,0 +1,11 @@
+[Unit]
+Description=weizhen
+
+[Service]
+User=pi
+Type=simple
+ExecStart=/home/pi/.yarn/bin/weizhen iot
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
