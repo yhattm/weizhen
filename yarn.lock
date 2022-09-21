@@ -797,6 +797,13 @@
     "@types/expect" "^1.20.4"
     "@types/node" "*"
 
+"@types/ws@^8.5.3":
+  version "8.5.3"
+  resolved "https://registry.yarnpkg.com/@types/ws/-/ws-8.5.3.tgz#7d25a1ffbecd3c4f2d35068d0b283c037003274d"
+  integrity sha512-6YOoWjruKj1uLf3INHH7D3qTXwFfEsg1kf3c0uDdSBJwfa/llkwIjrAGV7j7mVgGNbzTQ3HiHKKDXl6bJPD97w==
+  dependencies:
+    "@types/node" "*"
+
 "@typescript-eslint/eslint-plugin@^4.31.2":
   version "4.33.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.33.0.tgz#c24dc7c8069c7706bc40d99f6fa87edcb2005276"
@@ -5680,7 +5687,7 @@ yeoman-generator@^5.6.1:
 
 "yhattmtslib@https://github.com/yhattm/yhattmtslib.git":
   version "5.9.21"
-  resolved "https://github.com/yhattm/yhattmtslib.git#105261c049dd5a56e3aaf019412f3cb7b2f04197"
+  resolved "https://github.com/yhattm/yhattmtslib.git#400a3a15651286447c1e23543335d3c0e0297376"
   dependencies:
     cheerio "^1.0.0-rc.12"
     mqtt "^4.3.7"

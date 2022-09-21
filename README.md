@@ -20,7 +20,7 @@ $ npm install -g weizhen
 $ weizhen COMMAND
 running command...
 $ weizhen (--version)
-weizhen/5.9.22 linux-x64 node-v17.6.0
+weizhen/5.9.23 linux-x64 node-v17.6.0
 $ weizhen --help [COMMAND]
 USAGE
   $ weizhen COMMAND
@@ -33,7 +33,8 @@ USAGE
 * [`weizhen hello PERSON`](#weizhen-hello-person)
 * [`weizhen hello world`](#weizhen-hello-world)
 * [`weizhen help [COMMAND]`](#weizhen-help-command)
-* [`weizhen iot [FILE]`](#weizhen-iot-file)
+* [`weizhen iot`](#weizhen-iot)
+* [`weizhen iot open`](#weizhen-iot-open)
 * [`weizhen plugins`](#weizhen-plugins)
 * [`weizhen plugins:install PLUGIN...`](#weizhen-pluginsinstall-plugin)
 * [`weizhen plugins:inspect PLUGIN...`](#weizhen-pluginsinspect-plugin)
@@ -63,7 +64,7 @@ EXAMPLES
   $ weizhen gpio -s on
 ```
 
-_See code: [dist/commands/gpio.ts](https://github.com/yhattm/weizhen/blob/v5.9.22/dist/commands/gpio.ts)_
+_See code: [dist/commands/gpio.ts](https://github.com/yhattm/weizhen/blob/v5.9.23/dist/commands/gpio.ts)_
 
 ## `weizhen hello PERSON`
 
@@ -87,7 +88,7 @@ EXAMPLES
   hello friend from oclif! (./src/commands/hello/index.ts)
 ```
 
-_See code: [dist/commands/hello/index.ts](https://github.com/yhattm/weizhen/blob/v5.9.22/dist/commands/hello/index.ts)_
+_See code: [dist/commands/hello/index.ts](https://github.com/yhattm/weizhen/blob/v5.9.23/dist/commands/hello/index.ts)_
 
 ## `weizhen hello world`
 
@@ -125,26 +126,37 @@ DESCRIPTION
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v5.1.12/src/commands/help.ts)_
 
-## `weizhen iot [FILE]`
+## `weizhen iot`
 
-describe the command here
+Weizhen home
 
 ```
 USAGE
-  $ weizhen iot [FILE] [-n <value>] [-f]
-
-FLAGS
-  -f, --force
-  -n, --name=<value>  name to print
+  $ weizhen iot
 
 DESCRIPTION
-  describe the command here
+  Weizhen home
 
 EXAMPLES
   $ weizhen iot
 ```
 
-_See code: [dist/commands/iot.ts](https://github.com/yhattm/weizhen/blob/v5.9.22/dist/commands/iot.ts)_
+_See code: [dist/commands/iot/index.ts](https://github.com/yhattm/weizhen/blob/v5.9.23/dist/commands/iot/index.ts)_
+
+## `weizhen iot open`
+
+open cmd
+
+```
+USAGE
+  $ weizhen iot open
+
+DESCRIPTION
+  open cmd
+
+EXAMPLES
+  $ weizhen iot open
+```
 
 ## `weizhen plugins`
 

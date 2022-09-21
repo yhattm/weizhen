@@ -1,6 +1,6 @@
 {
   "name": "weizhen",
-  "version": "5.9.22",
+  "version": "5.9.23",
   "description": "oclif example Hello World CLI",
   "author": "Ben",
   "bin": {
@@ -28,6 +28,7 @@
     "@types/chai": "^4",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.11.59",
+    "@types/ws": "^8.5.3",
     "chai": "^4",
     "eslint": "^7.32.0",
     "eslint-config-oclif": "^4",
