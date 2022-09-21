@@ -1,5 +1,6 @@
 import { Command, Flags } from '@oclif/core'
 import { timer } from 'rxjs'
+import { mqtt, gpio } from 'yhattmtslib'
 
 export default class Iot extends Command {
   static description = 'describe the command here'
@@ -8,25 +9,23 @@ export default class Iot extends Command {
     '<%= config.bin %> <%= command.id %>',
   ]
 
-  static flags = {
-    // flag with a value (-n, --name=VALUE)
-    name: Flags.string({ char: 'n', description: 'name to print' }),
-    // flag with no value (-f, --force)
-    force: Flags.boolean({ char: 'f' }),
-  }
-
-  static args = [{ name: 'file' }]
-
   public async run(): Promise<void> {
-    const { args, flags } = await this.parse(Iot)
-
-    const name = flags.name ?? 'world'
     this.log('Start')
-    this.log(`hello ${name} from /workspaces/weizhen/src/commands/iot.ts`)
-    if (args.file && flags.force) {
-      this.log(`you input --force and --file: ${args.file}`)
-    }
 
-    timer(0, 5000).subscribe(n => this.log('keep alive', n))
+    const cli = mqtt.connect('https://broker.hivemq.com');
+    cli.subscribe('weizhen', (err: any) => {
+      if (err) {
+        console.log(err);
+      }
+    })
+    cli.on('message', (topic: any, msg: { toString: () => any }) => {
+      const cmd = msg.toString()
+      console.log(topic, cmd);
+      if (cmd === 'o') {
+        console.log('open door')
+        gpio.setHighToLow(14, 500)
+      }
+    });
+    timer(0, 10000).subscribe(n => this.log('keep alive', n))
   }
 }
