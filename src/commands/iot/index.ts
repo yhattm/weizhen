@@ -3,7 +3,7 @@ import { timer } from 'rxjs'
 import { mqtt, gpio } from 'yhattmtslib'
 
 export default class Iot extends Command {
-  static description = 'describe the command here'
+  static description = 'Weizhen home'
 
   static examples = [
     '<%= config.bin %> <%= command.id %>',
@@ -21,7 +21,7 @@ export default class Iot extends Command {
     cli.on('message', (topic: any, msg: { toString: () => any }) => {
       const cmd = msg.toString()
       console.log(topic, cmd);
-      if (cmd === 'o') {
+      if (cmd === 'open') {
         console.log('open door')
         gpio.setHighToLow(14, 500)
       }
