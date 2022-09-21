@@ -5552,7 +5552,7 @@ yeoman-generator@^5.6.1:
 
 "yhattmtslib@https://github.com/yhattm/yhattmtslib.git":
   version "5.9.20"
-  resolved "https://github.com/yhattm/yhattmtslib.git#e94b3ce4d968bc66434440cba298658bd8028344"
+  resolved "https://github.com/yhattm/yhattmtslib.git#769cba0dad756dccd7eb20c3d4f7ae20dc66ac3c"
   dependencies:
     cheerio "^1.0.0-rc.12"
     onoff "^6.0.3"

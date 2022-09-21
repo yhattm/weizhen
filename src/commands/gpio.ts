@@ -1,5 +1,5 @@
-import {Command, Flags} from '@oclif/core'
-import {GPIO} from 'yhattmtslib'
+import { Command, Flags } from '@oclif/core'
+import { gpio } from 'yhattmtslib'
 
 export default class Gpio extends Command {
   static description = 'set GPIO'
@@ -9,39 +9,39 @@ export default class Gpio extends Command {
   ]
 
   static flags = {
-    pin: Flags.integer({char: 'p', description: 'GPIO pin number', required: true}),
-    status: Flags.string({char: 's', description: 'status is highlow/high/low', required: true}),
+    pin: Flags.integer({ char: 'p', description: 'GPIO pin number', required: true }),
+    status: Flags.string({ char: 's', description: 'status is highlow/high/low', required: true }),
   }
 
   public async run(): Promise<void> {
-    const {flags} = await this.parse(Gpio)
+    const { flags } = await this.parse(Gpio)
 
-    const {pin, status} = flags
+    const { pin, status } = flags
     switch (status) {
-    case 'highlow': {
-      this.log('Set GPIO to ON then OFF')
-      GPIO.setHighToLow(pin, 1000)
+      case 'highlow': {
+        this.log('Set GPIO to ON then OFF')
+        gpio.setHighToLow(pin, 1000)
 
-      break
-    }
+        break
+      }
 
-    case 'high': {
-      this.log('Set GPIO to high')
-      GPIO.setHigh(pin)
+      case 'high': {
+        this.log('Set GPIO to high')
+        gpio.setHigh(pin)
 
-      break
-    }
+        break
+      }
 
-    case 'low': {
-      this.log('Set GPIO to low')
-      GPIO.setLow(pin)
+      case 'low': {
+        this.log('Set GPIO to low')
+        gpio.setLow(pin)
 
-      break
-    }
+        break
+      }
 
-    default: {
-      this.log('status is wrong')
-    }
+      default: {
+        this.log('status is wrong')
+      }
     }
   }
 }
