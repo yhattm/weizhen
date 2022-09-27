@@ -23,6 +23,7 @@ export default class Iot extends Command {
       console.log(topic, cmd);
       if (cmd === 'open') {
         console.log('open door')
+        //https://datasheets.raspberrypi.com/rpi3/raspberry-pi-3-b-plus-reduced-schematics.pdf
         gpio.setHighToLow(14, 500)
       }
     });
