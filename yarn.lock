@@ -484,7 +484,7 @@
     supports-color "^8.1.1"
     tslib "^2"
 
-"@oclif/core@^1.0.8", "@oclif/core@^1.13.10", "@oclif/core@^1.16.1", "@oclif/core@^1.2.1", "@oclif/core@^1.20.0", "@oclif/core@^1.23.0", "@oclif/core@^1.23.1":
+"@oclif/core@^1.0.8", "@oclif/core@^1.13.10", "@oclif/core@^1.16.1", "@oclif/core@^1.2.1", "@oclif/core@^1.23.0", "@oclif/core@^1.23.1":
   version "1.23.1"
   resolved "https://registry.yarnpkg.com/@oclif/core/-/core-1.23.1.tgz#bebbbc4e02a4c1a4216d64165f892037f8a1e14a"
   integrity sha512-nz7wVGesJ1Qg74p1KNKluZpQ3Z042mqdaRlczEI4Xwqj5s9jjdDBCDHNkiGzV4UAKzicVzipNj6qqhyUWKYnaA==
@@ -4606,10 +4606,10 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-rxjs@^7.0.0, rxjs@^7.5.5, rxjs@^7.8.0:
-  version "7.8.0"
-  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.8.0.tgz#90a938862a82888ff4c7359811a595e14e1e09a4"
-  integrity sha512-F2+gxDshqmIub1KdvZkaEfGDwLNpPvk9Fs6LD/MyQxNgMds/WH9OdDDXOmxUZpME+iSK3rQCctkL0DYyytUqMg==
+rxjs@^7.0.0, rxjs@^7.5.5, rxjs@^7.8.1:
+  version "7.8.1"
+  resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-7.8.1.tgz#6f6f3d99ea8044291efd92e7c7fcf562c4057543"
+  integrity sha512-AA3TVj+0A2iuIoQkWEK/tqFjBq2j+6PO6Y0zJcvzLAFhEFIO3HL0vls9hWLncZbAAbK0mar7oZ4V079I/qPMxg==
   dependencies:
     tslib "^2.1.0"
 
